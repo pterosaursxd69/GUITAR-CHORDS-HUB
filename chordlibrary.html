@@ -116,6 +116,7 @@
             try {
                 const response = await fetch('songs.json');
                 const data = await response.json();
+                console.log(data);  // Debugging: log the fetched data
                 return data;
             } catch (error) {
                 console.error('Error fetching songs data:', error);
@@ -125,9 +126,10 @@
         // Function to display search results
         async function searchSongs() {
             const searchTerm = document.getElementById('search-inputbox').value.toLowerCase();
+            console.log(searchTerm); // Debugging: log the search term
             const songLibrary = await fetchSongs(); // Fetch song data from JSON
             const results = songLibrary.filter(song => song.title.toLowerCase().includes(searchTerm));
-            
+
             const resultsContainer = document.getElementById('song-results');
             resultsContainer.innerHTML = ''; // Clear previous results
 
