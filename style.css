@@ -1,0 +1,65 @@
+body {
+    background-image: url("image.jpg");
+    background-size: cover;           /* poori screen bhar de */
+    background-position: center;      /* image center me rahe */
+    background-repeat: no-repeat;     /* repeat na ho */
+    height: 100vh;                    /* viewport height poori le */
+    margin: 0;                        /* default white space hata de */
+    padding: 0;
+    background-attachment: fixed;
+}
+.top-line {
+    width: 100%;
+    height: 70px;
+    background: #0398dd8a;
+    margin-top: 0px; /* Top se thoda neeche */
+    mix-blend-mode: screen; /* ⬅️ Yahi magic line */
+    background-attachment: fixed;
+}
+.search-box {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    padding: 0px 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);  /* translucent background */
+    backdrop-filter: blur(0px);            /* glass effect */
+    mix-blend-mode: screen;                /* smooth blend */
+    z-index: 1000;
+}
+
+.top-line .name {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    mix-blend-mode: screen;
+    padding: 200px 46%;
+    background: transparent;
+    
+    
+}
+.myBtn {
+    cursor: pointer; /* 👈 Force the finger pointer */
+  }
+  .myBtn a {
+    text-decoration: none;
+    color: inherit;
+    pointer-events: none; /* 👈 To prevent a tag from catching pointer separately */
+  }
+  h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #ffffff;
+    margin-left: 20%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 20%;
+}
